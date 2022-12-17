@@ -1,6 +1,6 @@
-package abstractFactory.pizza;
+package factoryMethod.pizza;
 
-public class LDPepperPizza extends Pizza {
+public class LDPepperPizza extends Pizza{
     @Override
     public void prepare() {
         setName("伦敦胡椒Pizza");

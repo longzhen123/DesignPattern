@@ -4,16 +4,13 @@ public class PizzaStore {
 
     public static void main(String[] args) {
 
-        OrderPizza orderPizza = new OrderPizza();
-
-        String pizzaType = "LD";
-
-        if("BJ".equals(pizzaType)) {
-            orderPizza.setPizzaFactory(new BJPizzaFactory());
+        String type = "LD";
+        OrderService orderService = new OrderService();
+        if("BJ".equals(type)) {
+            orderService.setFactory(new BJFactory());
         } else {
-            orderPizza.setPizzaFactory(new LDPizzaFactory());
+            orderService.setFactory(new LDFactory());
         }
-
-        orderPizza.order();
+        orderService.order();
     }
 }

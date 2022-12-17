@@ -1,4 +1,4 @@
-package abstractFactory.pizza.simpleFactory.pizza;
+package simpleFactory.pizza;
 
 public class CheesePizza extends Pizza {
     @Override

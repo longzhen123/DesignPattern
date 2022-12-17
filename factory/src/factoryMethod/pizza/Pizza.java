@@ -1,8 +1,10 @@
-package abstractFactory.pizza.simpleFactory.pizza;
+package factoryMethod.pizza;
 
 public abstract class Pizza {
-
     private String name;
+
+    public Pizza() {
+    }
 
     public abstract void prepare();
 
@@ -11,14 +13,15 @@ public abstract class Pizza {
     }
 
     public void bake() {
-        System.out.println(name + " bake");
+        System.out.println(this.name + " bake");
     }
 
     public void cut() {
-        System.out.println(name + " cut");
+        System.out.println(this.name + " cut");
     }
 
     public void box() {
-        System.out.println(name + " box");
+        System.out.println(this.name + " box");
     }
+
 }

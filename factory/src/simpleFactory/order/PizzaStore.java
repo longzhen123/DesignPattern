@@ -1,4 +1,4 @@
-package abstractFactory.pizza.simpleFactory.order;
+package simpleFactory.order;
 
 public class PizzaStore {
 

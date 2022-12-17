@@ -1,8 +1,8 @@
-package abstractFactory.order;
+package factoryMethod.order;
 
-import abstractFactory.pizza.BJCheesePizza;
-import abstractFactory.pizza.BJPepperPizza;
-import abstractFactory.pizza.Pizza;
+import factoryMethod.pizza.BJCheesePizza;
+import factoryMethod.pizza.BJPepperPizza;
+import factoryMethod.pizza.Pizza;
 
 public class BJPizzaFactory extends PizzaFactory{
     @Override

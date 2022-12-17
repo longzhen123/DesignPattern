@@ -1,6 +1,6 @@
-package abstractFactory.order;
+package factoryMethod.order;
 
-import abstractFactory.pizza.Pizza;
+import factoryMethod.pizza.Pizza;
 
 public abstract class PizzaFactory {
 

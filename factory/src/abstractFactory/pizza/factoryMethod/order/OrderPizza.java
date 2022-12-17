@@ -1,19 +1,23 @@
-package abstractFactory.pizza.simpleFactory.order;
+package abstractFactory.pizza.factoryMethod.order;
 
-import abstractFactory.pizza.simpleFactory.pizza.Pizza;
+import abstractFactory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class OrderPizza2 {
+public class OrderPizza {
+    private PizzaFactory pizzaFactory;
 
+    public void setPizzaFactory(PizzaFactory pizzaFactory) {
+        this.pizzaFactory = pizzaFactory;
+    }
 
     public void order() {
         Pizza pizza = null;
         do {
 
-            pizza = SimpleFactory.createPizza2(getType());
+            pizza = pizzaFactory.create(getType());
 
             if(null != pizza) {
                 pizza.prepare();
@@ -25,7 +29,6 @@ public class OrderPizza2 {
             }
 
         } while (true);
-
     }
 
     public String getType() {
@@ -40,16 +43,6 @@ public class OrderPizza2 {
             return str;
         } catch (IOException e) {
             return "";
-//        } finally {
-//
-//            if(null != bufferedReader) {
-//                try {
-//                    bufferedReader.close();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//
         }
     }
 }
