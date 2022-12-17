@@ -1,9 +1,9 @@
-package order;
+package abstractFactory.pizza.simpleFactory.order;
 
-import pizza.CheesePizza;
-import pizza.GreekPizza;
-import pizza.PepperPizza;
-import pizza.Pizza;
+import abstractFactory.pizza.simpleFactory.pizza.CheesePizza;
+import abstractFactory.pizza.simpleFactory.pizza.GreekPizza;
+import abstractFactory.pizza.simpleFactory.pizza.PepperPizza;
+import abstractFactory.pizza.simpleFactory.pizza.Pizza;
 
 public class SimpleFactory {
 

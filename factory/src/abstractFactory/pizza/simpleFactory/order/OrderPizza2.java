@@ -1,26 +1,19 @@
-package order;
+package abstractFactory.pizza.simpleFactory.order;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
-import pizza.Pizza;
+import abstractFactory.pizza.simpleFactory.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class OrderPizza {
+public class OrderPizza2 {
 
-    private SimpleFactory simpleFactory;
-    private Pizza pizza;
-
-    public OrderPizza(SimpleFactory simpleFactory) {
-        this.simpleFactory = simpleFactory;
-    }
 
     public void order() {
-        pizza = null;
+        Pizza pizza = null;
         do {
 
-            pizza = simpleFactory.createPizza(getType());
+            pizza = SimpleFactory.createPizza2(getType());
 
             if(null != pizza) {
                 pizza.prepare();
