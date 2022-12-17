@@ -2,6 +2,7 @@ package type8;
 
 public class SingletonTest08 {
     public static void main(String[] args) {
+        System.out.println("==========");
         SingleTon instance = SingleTon.INSTANCE;
         SingleTon instance1 = SingleTon.INSTANCE;
         System.out.println(instance1 == instance);
@@ -16,6 +17,10 @@ public class SingletonTest08 {
 
 enum SingleTon {
     INSTANCE;
+
+    private SingleTon() {
+        System.out.println("init");
+    }
 
     public void sayOk() {
         System.out.println("OK");
