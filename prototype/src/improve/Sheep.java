@@ -1,3 +1,5 @@
+package improve;
+
 public class Sheep implements Cloneable{
     private String name;
     private int age;
@@ -5,7 +7,7 @@ public class Sheep implements Cloneable{
 
     @Override
     public String toString() {
-        return "Sheep{" +
+        return "improve.Sheep{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", color='" + color + '\'' +
